@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/simplehr</property>
+        <property name="hibernate.connection.username">ngochuydev</property>
+        <property name="hibernate.connection.password">123456</property>
+        
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        
+        <property name="connection.pool_size">1</property>
+        <property name="current_session_context_class">thread</property>
+        <!-- <property name="cache.provider_class">org.hibernate.cache.internal.NoCacheProvider</property> -->
+        <property name="show_sql">true</property>
+        
+        <mapping class="org.o7planning.tutorial.hibernate.entities.Employee"/>
+        <mapping class="org.o7planning.tutorial.hibernate.entities.Department"/>
+        <mapping class="org.o7planning.tutorial.hibernate.entities.SalaryGrade"/>
+        <mapping class="org.o7planning.tutorial.hibernate.entities.Timekeeper"/>
+    </session-factory>
+</hibernate-configuration>
