@@ -16,9 +16,9 @@
         <!-- <property name="cache.provider_class">org.hibernate.cache.internal.NoCacheProvider</property> -->
         <property name="show_sql">true</property>
         
-        <mapping class="org.o7planning.tutorial.hibernate.entities.Employee"/>
-        <mapping class="org.o7planning.tutorial.hibernate.entities.Department"/>
-        <mapping class="org.o7planning.tutorial.hibernate.entities.SalaryGrade"/>
-        <mapping class="org.o7planning.tutorial.hibernate.entities.Timekeeper"/>
+        <mapping class="org.ngochuydev.review.hibernate.entities.Employee"/>
+        <mapping class="org.ngochuydev.review.hibernate.entities.Department"/>
+        <mapping class="org.ngochuydev.review.hibernate.entities.SalaryGrade"/>
+        <mapping class="org.ngochuydev.review.hibernate.entities.Timekeeper"/>
     </session-factory>
 </hibernate-configuration>
